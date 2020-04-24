@@ -8,7 +8,7 @@ public class StringUtilTest {
 
 	@Test//判断是否是手机号
 	public void testIsPhone() {
-	 String str ="18799999991";
+	 String str ="1879999119991";
 	 boolean b = StringUtil.isPhone(str);
 	 if(b) {
 		 System.out.println("是");
@@ -21,7 +21,7 @@ public class StringUtilTest {
 	
 	@Test//判断是否数字
 	public void testIsNumber() {
-	 String str ="10";
+	 String str ="aa11";
 	 boolean b = StringUtil.isNumber(str);
 	 if(b) {
 		 System.out.println("是数字");
