@@ -6,27 +6,27 @@ import java.util.Random;
 /**
  * 
  * @ClassName: RandomUtil 
- * @Description: Ëæ»úÊı 
- * @author: ¶ÎÎÄÁú
- * @date: 2020Äê4ÔÂ23ÈÕ ÏÂÎç2:06:48
+ * @Description: éšæœºæ•°å·¥å…·ç±»
+ * @author: æ®µæ–‡é¾™
+ * @date: 2020å¹´4æœˆ24æ—¥ ä¸‹åˆ7:04:09
  */
 public class RandomUtil {
-	//·½·¨1£º·µ»Ømin-maxÖ®¼äµÄËæ»úÕûÊı£¨°üº¬minºÍmaxÖµ£©£¬ÀıÈç·µ»Ø1-3Ö®¼äµÄËæ»úÊı£¬ÄÇÃ´·µ»Ø1»ò2»ò3¶¼ÊÇÕıÈ·µÄ£¬·µ»Ø4¾Í²»¶Ô¡£ (5·Ö)
+	// æ–¹æ³•1ï¼šè¿”å›min-maxä¹‹é—´çš„éšæœºæ•´æ•°ï¼ˆåŒ…å«minå’Œmaxå€¼ï¼‰ï¼Œä¾‹å¦‚è¿”å›1-3ä¹‹é—´çš„éšæœºæ•°ï¼Œé‚£ä¹ˆè¿”å›1æˆ–2æˆ–3éƒ½æ˜¯æ­£ç¡®çš„ï¼Œè¿”å›4å°±ä¸å¯¹ã€‚ (5åˆ†)
 		public static int random(int min, int max){
 			Random r = new Random();
-			//·µ»Ø´óÓÚµÈÓÚ0£¬Ğ¡ÓÚMax
+			
 			return r.nextInt(max - min +1)+min;
 		}
-		//·½·¨2£ºÔÚ×îĞ¡ÖµminÓë×î´óÖµmaxÖ®¼ä½ØÈ¡subs¸ö²»ÖØ¸´µÄËæ»úÊı¡£ÀıÈçÔÚ1-10Ö®¼äÈ¡3¸ö²»ÖØ¸´µÄËæ»úÊı£¬ÄÇÃ´[2,6,9]ÊÇ¶ÔµÄ£¬[3,5,5]Ôò²»¶Ô£¬ÒòÎª5ÖØ¸´ÁË¡£Ó¦ÓÃ³¡¾°£ºÔÚ100ÆªÎÄÕÂÖĞËæ»úÈ¡10ÆªÎÄÕÂ£¬ÔÂ¿¼¿ÉÄÜ»áÊ¹ÓÃµ½¡£ (8·Ö)
+		// æ–¹æ³•2ï¼šåœ¨æœ€å°å€¼minä¸æœ€å¤§å€¼maxä¹‹é—´æˆªå–subsä¸ªä¸é‡å¤çš„éšæœºæ•°ã€‚ä¾‹å¦‚åœ¨1-10ä¹‹é—´å–3ä¸ªä¸é‡å¤çš„éšæœºæ•°ï¼Œé‚£ä¹ˆ[2,6,9]æ˜¯å¯¹çš„ï¼Œ[3,5,5]åˆ™ä¸å¯¹ï¼Œå› ä¸º5é‡å¤äº†ã€‚åº”ç”¨åœºæ™¯ï¼šåœ¨100ç¯‡æ–‡ç« ä¸­éšæœºå–10ç¯‡æ–‡ç« ï¼Œæœˆè€ƒå¯èƒ½ä¼šä½¿ç”¨åˆ°ã€‚
 		public static int[] subRandom (int min, int max, int subs){
 			
-			int[] result =new int[subs];//½á¹ûÊı×é
-			//ÓÃÀ´¹ıÂËÖØ¸´Êı¾İ
+			int[] result =new int[subs];//ç»“æœæ•°ç»„
+			//ç”¨æ¥è¿‡æ»¤é‡å¤çš„æ•°æ®
 			HashSet<Integer> set = new HashSet<Integer>();
 			while(set.size()!=subs) {
 				set.add(random(min, max));
 			}
-			//±éÀúset°ÑÖµ·ÅÈëÊı×é
+			//éå†set ï¼ŒæŠŠå€¼æ”¾å…¥æ•°ç»„
 			int i=0;
 			for (Integer value : set) {
 				result[i] = value;
@@ -34,14 +34,14 @@ public class RandomUtil {
 			}
 			return result;
 		}
-		//·½·¨3£º·µ»Ø1¸ö1-9,a-ZÖ®¼äµÄËæ»ú×Ö·û¡£ 
+		// æ–¹æ³•3ï¼šè¿”å›1ä¸ª  1-9,a-Zä¹‹é—´çš„éšæœºå­—ç¬¦ã€‚
 		public static char randomCharacter (){
 			String str= "123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM";
 			char c = str.charAt(random(0, str.length()-1));
 			System.out.println(c);
 			return 0;
 		}
-		//·½·¨4£º·µ»Ø²ÎÊılength¸ö×Ö·û´®(5·Ö)£¬·½·¨ÄÚ²¿Òªµ÷ÓÃrandomCharacter()·½·¨ (4·Ö)
+		// æ–¹æ³•4ï¼šè¿”å›å‚æ•°lengthä¸ªå­—ç¬¦ä¸²(5åˆ†)ï¼Œæ–¹æ³•å†…éƒ¨è¦è°ƒç”¨randomCharacter()æ–¹æ³• 
 		public static String randomString(int length){
 			StringBuffer str = new StringBuffer();
 			for (int i = 0; i < length; i++) {
