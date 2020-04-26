@@ -3,6 +3,15 @@ package com.duanwl.common.utils;
 import org.junit.Test;
 
 public class StringUtilTest {
+	
+	@Test
+	public void testGetPlaceholderValue() {
+		String str="http://news.cnstock.com/news,yw-201908-4413224.htm";
+		String string = StringUtil.getPlaceholderValue(str, "[0-9]+(?=[^0-9]*$)");
+		System.out.println(string);
+	}
+	
+	
 	@Test//判断是否是手机号
 	public void testIsPhone() {
 	 String str ="187999999991";

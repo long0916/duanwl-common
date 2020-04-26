@@ -8,8 +8,8 @@ import java.util.Map;
  * 
  * @ClassName: AssertUtil 
  * @Description: 断言工具类
- * @author: 段文龙
- * @date: 2020年4月26日 下午4:53:04
+ * @author: charles
+ * @date: 2020年4月26日 上午10:41:34
  */
 public class AssertUtil {
 	

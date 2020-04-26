@@ -7,8 +7,8 @@ import java.util.Date;
  * 
  * @ClassName: DateUtil 
  * @Description: 日期工具类
- * @author: 段文龙
- * @date: 2020年4月26日 下午4:52:30
+ * @author: charles
+ * @date: 2020年4月23日 下午4:38:21
  */
 public class DateUtil {
 	
