@@ -5,10 +5,10 @@ import java.util.Random;
 
 /**
  * 
- * @ClassName: StringUtil
- * @Description: 字符串处理工具类
- * @author: charles
- * @date: 2020年4月23日 上午10:40:06
+ * @ClassName: StringUtil 
+ * @Description: TODO
+ * @author: 段文龙
+ * @date: 2020年4月26日 下午4:52:08
  */
 public class StringUtil {
 

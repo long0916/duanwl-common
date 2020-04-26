@@ -14,8 +14,8 @@ import java.util.List;
  * 
  * @ClassName: StreamUtil 
  * @Description: 流处理工具类
- * @author: charles
- * @date: 2020年4月24日 下午3:21:54
+ * @author: 段文龙
+ * @date: 2020年4月26日 下午4:52:17
  */
 public class StreamUtil {
 	

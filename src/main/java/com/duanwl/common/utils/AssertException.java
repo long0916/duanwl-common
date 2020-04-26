@@ -3,8 +3,8 @@ package com.duanwl.common.utils;
  * 
  * @ClassName: AssertException 
  * @Description: 断言异常类
- * @author: charles
- * @date: 2020年4月26日 上午10:45:47
+ * @author: 段文龙
+ * @date: 2020年4月26日 下午4:53:17
  */
 public class AssertException extends RuntimeException {
 

@@ -5,10 +5,10 @@ import java.util.Random;
 
 /**
  * 
- * @ClassName: RandomUtil
+ * @ClassName: RandomUtil 
  * @Description: 随机数工具类
- * @author: charles
- * @date: 2020年4月23日 上午10:39:33
+ * @author: 段文龙
+ * @date: 2020年4月26日 下午4:52:52
  */
 public class RandomUtil {
 

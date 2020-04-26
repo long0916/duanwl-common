@@ -6,8 +6,8 @@ import java.io.File;
  * 
  * @ClassName: FileUtil 
  * @Description: 文件工具类
- * @author: charles
- * @date: 2020年4月24日 下午3:21:37
+ * @author: 段文龙
+ * @date: 2020年4月26日 下午4:52:42
  */
 public class FileUtil {
 	
