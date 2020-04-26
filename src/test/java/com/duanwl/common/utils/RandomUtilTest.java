@@ -6,7 +6,12 @@ public class RandomUtilTest {
 
 	@Test
 	public void testRandom() {
-		System.out.println(RandomUtil.random(1, 3));
+		for (int i = 0; i < 10; i++) {
+			System.out.println(RandomUtil.random(1, 130));
+		}
+	
+		
+		
 	}
 
 	@Test
@@ -26,7 +31,7 @@ public class RandomUtilTest {
 	@Test
 	public void testRandomString() {
 		String string = RandomUtil.randomString(4);
-		System.out.print(string);
+		System.out.println(string);
 	}
 
 }

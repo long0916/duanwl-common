@@ -1,14 +1,11 @@
 package com.duanwl.common.utils;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 public class StringUtilTest {
-
 	@Test//判断是否是手机号
 	public void testIsPhone() {
-	 String str ="1879999119991";
+	 String str ="187999999991";
 	 boolean b = StringUtil.isPhone(str);
 	 if(b) {
 		 System.out.println("是");
@@ -21,7 +18,7 @@ public class StringUtilTest {
 	
 	@Test//判断是否数字
 	public void testIsNumber() {
-	 String str ="aa11";
+	 String str ="1aaaaa4.0";
 	 boolean b = StringUtil.isNumber(str);
 	 if(b) {
 		 System.out.println("是数字");
@@ -52,16 +49,11 @@ public class StringUtilTest {
 	}
 
 	@Test
-	public void testGenerateChineseName1() {
+	public void testGenerateChineseName() {
 		for (int i = 0; i < 100; i++) {
 			String name = StringUtil.generateChineseName();
 			System.out.println(name);
 		}
-	}
-
-	@Test
-	public void testGenerateChineseName() {
-		fail("Not yet implemented");
 	}
 
 }

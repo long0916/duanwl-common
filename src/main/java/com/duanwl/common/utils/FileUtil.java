@@ -1,19 +1,21 @@
 package com.duanwl.common.utils;
 
 import java.io.File;
+
 /**
  * 
  * @ClassName: FileUtil 
  * @Description: 文件工具类
- * @author: 段文龙
- * @date: 2020年4月24日 下午7:10:39
+ * @author: charles
+ * @date: 2020年4月24日 下午3:21:37
  */
 public class FileUtil {
-
+	
 	/*
 	* 方法1：给定一个文件名，返回该文件名的扩展名，例如“aaa.jpg”，返回“.jpg”(3分)
 	*/
 	public static String getExtendName(String fileName){
+		
 		if(!StringUtil.hasText(fileName) || !fileName.contains("."))
 			throw new RuntimeException("不是文件");
 		
@@ -34,4 +36,5 @@ public class FileUtil {
 		String path = System.getProperty("user.home");
 		return new File(path);
 	}
+
 }

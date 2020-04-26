@@ -10,7 +10,7 @@ public class FileUtilTest {
 
 	@Test
 	public void testGetExtendName() {
-		String str="aaa.txt" ;
+		String str="a.aa.jpg" ;
 		String name = FileUtil.getExtendName(null);
 		System.out.println(name);
 	}
@@ -20,6 +20,7 @@ public class FileUtilTest {
 		File file = FileUtil.getTempDirectory();
 		System.out.println(file);
 	}
+	
 
 	@Test
 	public void testGetUserDirectory() {

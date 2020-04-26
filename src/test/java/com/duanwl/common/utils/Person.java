@@ -3,10 +3,11 @@ package com.duanwl.common.utils;
 import java.util.Date;
 
 public class Person {
+
 	private String name;
 	private Integer age;
-	private String about;// ¸öÈË½éÉÜ
-	private Date created;//×¢²áÈÕÆÚ
+	private String about;// ä¸ªäººä»‹ç»
+	private Date created;//æ³¨å†Œæ—¥æœŸ
 	public String getName() {
 		return name;
 	}
