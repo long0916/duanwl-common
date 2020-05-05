@@ -54,5 +54,21 @@ public class RandomUtil {
 		}
 		return str.toString();
 	}
+	
+	
+	//方法5：返回1个1-9之间的随机数
+	public static int random() {
+		String str = "1234567890";
+		return str.charAt(random(0, str.length()-1));
+	}
+	
+	//方法6：
+	public static String random(int length) {
+		StringBuffer str=new StringBuffer();
+		for(int i=0;i<length;i++) {
+			str.append(random());
+		}
+		return str.toString();
+	}
 
 }
