@@ -22,16 +22,16 @@ public class DateUtil {
 		long t1 = now.getTime();
 		long t2 = date.getTime();
 		long t =(t1-t2)/1000/60;
-		if((t/60/24/30/12)>1){
+		if((t/60/24/30/12)>=1){
 			return (t/60/24/30/12)+"年前";
 		}else{
-			if((t/60/24/30)>1){
+			if((t/60/24/30)>=1){
 				return (t/60/24/30)+"月前";
 			}else{
-				if((t/60/24)>1){
+				if((t/60/24)>=1){
 					return (t/60/24)+"天前";
 				}else{
-					if((t/60)>1){
+					if((t/60)>=1){
 						return (t/60)+"小时前";
 					}else{
 						if(t>=5){
